@@ -1,3 +1,48 @@
+:root {
+  --primary-color: rgb(235, 179, 95);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: grey;
+  height: 98vh;
+  background:
+    linear-gradient(var(--primary-color), rgb(218, 156, 64)), no-repeat;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+button {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+p {
+  padding: 30px;
+  font-size: 1.4rem;
 }

@@ -1,12 +1,13 @@
 import "./style.css";
-import img from "./background.png";
-
-console.log("we are online in 8080!");
+import lasagna from "./lasagna.jpg";
+import { h1Factory, paragraphFactory, imageFactory } from "./pageLoad.js";
 
 const divContent = document.querySelector("#content");
-const background = document.createElement("img");
+const paragraph =
+  "The place where you can enjoy a lasagna that feels like home, made with the freshest ingredients and cooked by the best of the best, from the home of lasagnas";
 
-background.src = img;
-background.style.width = "100%";
+divContent.appendChild(h1Factory("Welcome to pasteria, home of lasagnas!"));
+divContent.appendChild(imageFactory(lasagna, `90vw`));
+divContent.appendChild(paragraphFactory(paragraph));
 
-divContent.appendChild(background);
+//step seven to go
