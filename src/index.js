@@ -7,7 +7,7 @@ const paragraph =
   "The place where you can enjoy a lasagna that feels like home, made with the freshest ingredients and cooked by the best of the best, from the home of lasagnas";
 
 divContent.appendChild(h1Factory("Welcome to pasteria, home of lasagnas!"));
-divContent.appendChild(imageFactory(lasagna, `90vw`));
+divContent.appendChild(imageFactory(lasagna, `900px`));
 divContent.appendChild(paragraphFactory(paragraph));
 
 //step seven to go

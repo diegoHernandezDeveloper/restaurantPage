@@ -8,10 +8,10 @@ function paragraphFactory(text) {
   p.innerText = text;
   return p;
 }
-function imageFactory(src, width) {
+function imageFactory(src) {
   const img = document.createElement("img");
   img.src = src;
-  img.style.width = `${width}`;
+
   return img;
 }
 
