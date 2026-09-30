@@ -1,20 +1,19 @@
-function h1Factory(text) {
-  const h1 = document.createElement("h1");
-  h1.innerText = text;
-  return h1;
-}
-function paragraphFactory(text) {
-  const p = document.createElement("p");
-  p.innerText = text;
-  return p;
-}
-function imageFactory(src) {
-  const img = document.createElement("img");
-  img.src = src;
-
-  return img;
+function elementCreator(element, value) {
+  const elementVariable = document.createElement(`${element}`);
+  element == "img"
+    ? (elementVariable.src = value)
+    : (elementVariable.innerText = value);
+  return elementVariable;
 }
 
-export { h1Factory, paragraphFactory, imageFactory };
+function menuFactory(header, img, paragraph) {
+  let div = elementCreator("div", "");
+  div.appendChild(elementCreator(`h2`, header));
+  div.appendChild(elementCreator("img", img));
+  div.appendChild(elementCreator(`p`, paragraph));
+  return div;
+}
+
+export { elementCreator, menuFactory };
 
 //step seven to go
